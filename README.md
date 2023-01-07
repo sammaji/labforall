@@ -1,6 +1,6 @@
 # Experiments-guide
 
-![image](./preview/presentation%20(1).png)
+![image](./preview/dashboard.png)
 
 ## Installation
 
