@@ -1,0 +1,21 @@
+nav {
+  background-color: blue;
+}
+
+nav ul {
+  background-color: red;
+  height: auto;
+}
+
+nav ul li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    font-size: 16px;
+    color: white;
+}
+
+nav ul li:hover {
+    color: black;
+    background-color: white;
+}
