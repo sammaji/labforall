@@ -1,0 +1,22 @@
+footer {
+  width: 100vw;
+  height: fit-content;
+  background-color: #2869fe;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+footer ul {
+  padding: 2rem;
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+footer ul > li:first-child {
+  font-weight: bold;
+}

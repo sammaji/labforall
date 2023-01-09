@@ -1,5 +1,8 @@
-
-
 .collapse-menu {
   grid-template-columns: 72px 2fr 1fr;
+}
+
+/** hide all menu items **/
+.collapse-menu nav a {
+  display: none;
 }

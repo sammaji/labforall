@@ -1,5 +1,5 @@
 nav {
-  background-color: blue;
+  background-color: var(--col-pri);
 }
 
 nav ul {
@@ -8,17 +8,30 @@ nav ul {
 }
 
 nav ul li {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 16px;
+  color: white;
 
-    font-size: 16px;
-    color: white;
+  /* display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: antiquewhite; */
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 1rem;
+}
+
+nav ul svg {
+  background-color: green;
+  height: 40px;
+  width: 40px;
+  padding-left: 20px;
 }
 
 nav ul li:hover {
-    color: black;
-    background-color: white;
+  color: black;
+  background-color: white;
 }
-

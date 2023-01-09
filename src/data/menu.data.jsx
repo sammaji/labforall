@@ -1,23 +1,34 @@
+import { FaBeer } from "react-icons/fa"
+
 const MENU_DATA = [
     {
         title: "Profile",
         to: "profile", 
+        icon: FaBeer
     },
     {
         title: "Dashboard",
         to: "dashboard", 
+        icon: FaBeer
+
     },
     {
-        title: "Lecture Notes",
-        to: "lecture_notes", 
+        title: "Notes",
+        to: "notes", 
+        icon: FaBeer
+
     },
     {
         title: "Settings",
         to: "settings", 
+        icon: FaBeer
+
     },
     {
         title: "About Us",
         to: "about_us", 
+        icon: FaBeer
+
     },
 ]
 
