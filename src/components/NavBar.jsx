@@ -10,7 +10,9 @@ export default function NavBar() {
   return (
     <nav>
       <header>
-        <button onClick={toggle_menu}>{"_<_"}</button>
+        <button onClick={toggle_menu}>
+          {"  <  "}
+        </button>
       </header>
       <ul>
         {MENU_DATA.map((item, index) => {
