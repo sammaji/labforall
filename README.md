@@ -1,6 +1,6 @@
 # Experiments-guide
 
-![image](./preview/presentation%20(1).png)
+![image](https://github.com/samyabrata-maji/experiments-website/blob/main/preview/dasboard.png)
 
 ## Installation
 
