@@ -1,5 +1,4 @@
 import React from "react";
-import "./Content.css";
 export default function Content() {
   const calculateDimensions = () => {
     return [128, 128];

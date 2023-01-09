@@ -1,6 +1,5 @@
 import React from "react";
 import MENU_DATA from "../data/menu.data";
-import "./NavBar.css";
 
 export default function NavBar() {
   function toggle_menu() {
