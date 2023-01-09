@@ -1,7 +1,6 @@
 .app {
-    background-color: red;
-    display: grid;
-    height: 100vh;
-    width: 100vw;
-    grid-template-columns: 200px 2fr 1fr;
-  }
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 200px 2fr 1fr;
+}

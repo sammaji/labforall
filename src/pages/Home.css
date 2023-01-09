@@ -1,0 +1,49 @@
+.home {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: red;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 72px 1fr;
+}
+
+.home nav {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  grid-column: span 2;
+}
+
+.home ul {
+  background-color: grey;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  width: 90vw;
+  list-style-type: none;
+}
+
+.home header {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.home h1 {
+  background-color: red;
+  font-size: 4em;
+  color: white;
+}
+.home h2 {
+  font-size: 1.5em;
+  color: white;
+}
+
+.hero-img {
+  background-color: aqua;
+}
