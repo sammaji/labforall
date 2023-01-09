@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css"
+import "../assets/css/Home.css"
 export default function Home() {
   const HOME_MENU = ["Home", "About Us", "Community", "Contacts"];
 
