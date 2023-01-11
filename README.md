@@ -14,14 +14,14 @@ Make sure you have Node Package Manager (npm) installed. Will work with most ver
 
 Now you need to install all the dependencies.
 ```
-npm install
+yarn install
 ```
 
 You are done with the installation.
 
 To run the website, use the following command
 ```
-npm run dev
+yarn dev
 ```
 
 The website will be live at https://localhost:5173/
