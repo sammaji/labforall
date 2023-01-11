@@ -6,15 +6,15 @@ import MENU_DATA from "../data/menu.data";
 import "../assets/css/NavBar.css";
 
 const NavBar = () => {
-  function toggle_menu() {
-    document.querySelector(".app").classList.toggle("collapse-menu");
-  }
+  // function toggle_menu() {
+  //   document.querySelector(".app").classList.toggle("collapse-menu");
+  // }
 
   return (
-    <nav className="navbar">
-      <header>
+    <nav className="navbar hello">
+      {/* <header>
         <button onClick={toggle_menu}>{"  <  "}</button>
-      </header>
+      </header> */}
       <ul>
         {MENU_DATA.map((item, index) => {
           return (

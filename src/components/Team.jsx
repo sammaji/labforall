@@ -23,7 +23,7 @@ const Team = () => {
           {team_json.data.map((item, index) => {
             return (
               <div className={"card"} key={index}>
-                <img src="https://avatars.githubusercontent.com/u/116789799?v=4"></img>
+                <img src={item.avatar}></img>
                 <h3>{item.name}</h3>
                 <p>{item.about}</p>
                 <span>
