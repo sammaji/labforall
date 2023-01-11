@@ -4,3 +4,22 @@
   width: 100vw;
   grid-template-columns: 200px 2fr 1fr;
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(60, 60, 60, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(70, 70, 70, 0.7);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #fff;
+}

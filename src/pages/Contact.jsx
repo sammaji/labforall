@@ -1,7 +1,8 @@
 import React from "react";
+
 import "../assets/css/Contact.css";
 
-export default function Contact() {
+const Contact = () => {
   const letter = "username";
   return (
     <div className="contact">
@@ -10,7 +11,8 @@ export default function Contact() {
         <label>
           {[...letter].map((item, index) => {
             return (
-              <span key={index}
+              <span
+                key={index}
                 style={{
                   transitionDelay: 50 * index,
                 }}
@@ -34,4 +36,6 @@ export default function Contact() {
       <h2>Hello</h2>
     </div>
   );
-}
+};
+
+export default Contact;

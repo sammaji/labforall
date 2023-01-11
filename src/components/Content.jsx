@@ -1,6 +1,8 @@
 import React from "react";
+
 import "../assets/css/Content.css";
-export default function Content() {
+
+const Content = () => {
   const calculateDimensions = () => {
     return [128, 128];
   };
@@ -34,4 +36,6 @@ export default function Content() {
       </div>
     </article>
   );
-}
+};
+
+export default Content;

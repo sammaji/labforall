@@ -1,9 +1,11 @@
 import React from "react";
-import MENU_DATA from "../data/menu.data";
-import "../assets/css/NavBar.css";
 import { IoIosHelpCircleOutline } from "react-icons/io";
 
-export default function NavBar() {
+import MENU_DATA from "../data/menu.data";
+
+import "../assets/css/NavBar.css";
+
+const NavBar = () => {
   function toggle_menu() {
     document.querySelector(".app").classList.toggle("collapse-menu");
   }
@@ -25,4 +27,6 @@ export default function NavBar() {
       </ul>
     </nav>
   );
-}
+};
+
+export default NavBar;

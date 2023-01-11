@@ -1,9 +1,9 @@
-import React from 'react'
-import "../assets/css/Recom.css"
-export default function Recom() {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+import React from "react";
+
+import "../assets/css/Recom.css";
+
+const Recom = () => {
+  return <div></div>;
+};
+
+export default Recom;

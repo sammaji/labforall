@@ -1,9 +1,16 @@
 import React from "react";
-import "../assets/css/Team.css";
-import rect_deco from "../assets/svg/deco-tilted-rect.svg";
+import {
+  AiOutlineTwitter,
+  AiFillLinkedin,
+  AiOutlineInstagram,
+} from "react-icons/ai";
+
 import team_json from "../data/team.json";
 
-export default function Team() {
+import rect_deco from "../assets/svg/deco-tilted-rect.svg";
+import "../assets/css/Team.css";
+
+const Team = () => {
   return (
     <div className="team">
       <div className="team-content">
@@ -19,6 +26,11 @@ export default function Team() {
                 <img src="https://avatars.githubusercontent.com/u/116789799?v=4"></img>
                 <h3>{item.name}</h3>
                 <p>{item.about}</p>
+                <span>
+                  <AiOutlineTwitter color="#1d9bf0" />
+                  <AiFillLinkedin color="#0a66c2" />
+                  <AiOutlineInstagram color="#f70165" />
+                </span>
               </div>
             );
           })}
@@ -30,4 +42,6 @@ export default function Team() {
       </div>
     </div>
   );
-}
+};
+
+export default Team;
