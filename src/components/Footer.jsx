@@ -1,7 +1,8 @@
 import React from "react";
+
 import "../assets/css/Footer.css";
 
-export default function Footer() {
+const Footer = () => {
   const COMPANY = {
     heading: "Socials",
     list: ["Twitter", "LinkedIn", "Instagram", "E-mail"],
@@ -39,4 +40,6 @@ export default function Footer() {
       </footer>
     </div>
   );
-}
+};
+
+export default Footer;

@@ -2,8 +2,9 @@ import React from "react";
 
 import "../assets/css/Hero.css";
 
-export default function Hero() {
+const Hero = () => {
   const HOME_MENU = ["Home", "About Us", "Community", "Contacts"];
+
   return (
     <div className="hero">
       <nav>
@@ -23,4 +24,6 @@ export default function Hero() {
       <div className="hero-img"></div>
     </div>
   );
-}
+};
+
+export default Hero;

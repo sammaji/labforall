@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-export default function LoginDialog() {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const LoginDialog = () => {
+  return <div></div>;
+};
+
+export default LoginDialog;

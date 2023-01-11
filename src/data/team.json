@@ -1,36 +1,36 @@
 {
-    "data": [
-        {
-            "name": "Samyabrata Maji",
-            "about": "Front-End Developer",
-            "twitter": "https://twitter.com/sammaji15",
-            "linkedin": "https://linkedin.com/in/samyabrata-maji",
-            "instagram": "https://instagram.com/sammaji15",
-            "avatar": "https://avatars.githubusercontent.com/u/116789799?v=4"
-        },
-        {
-            "name": "Swapnoneel Saha",
-            "about": "Front-End Developer and Content Writer",
-            "twitter": "https://twitter.com/Swapnoneel6",
-            "linkedin": "",
-            "instagram": "",
-            "avatar": ""
-        },
-        {
-            "name": "Karthik S",
-            "about": "Full Stack Developer (Web | Android | Blockchain)",
-            "twitter": "https://twitter.com/0xkarthikjr",
-            "linkedin": "https://www.linkedin.com/in/karthik-is-dev",
-            "instagram": "https://www.instagram.com/0xkarthiks",
-            "avatar": "https://avatars.githubusercontent.com/u/96634646?v=4"
-        },
-        {
-            "name": "Ayush Tyagi",
-            "about": "Front-End Developer",
-            "twitter": "",
-            "linkedin": "",
-            "instagram": "",
-            "avatar": ""
-        }
-    ]
+  "data": [
+    {
+      "name": "Samyabrata Maji",
+      "about": "Front-End Developer",
+      "twitter": "https://twitter.com/sammaji15",
+      "linkedin": "https://linkedin.com/in/samyabrata-maji",
+      "instagram": "https://instagram.com/sammaji15",
+      "avatar": "https://avatars.githubusercontent.com/u/116789799?v=4"
+    },
+    {
+      "name": "Swapnoneel Saha",
+      "about": "Front-End Developer and Content Writer",
+      "twitter": "https://twitter.com/Swapnoneel6",
+      "linkedin": "",
+      "instagram": "",
+      "avatar": ""
+    },
+    {
+      "name": "Karthik S",
+      "about": "Full Stack Developer (Web | Android | Blockchain)",
+      "twitter": "https://twitter.com/0xkarthikjr",
+      "linkedin": "https://www.linkedin.com/in/karthik-is-dev",
+      "instagram": "https://www.instagram.com/0xkarthiks",
+      "avatar": "https://avatars.githubusercontent.com/u/96634646?v=4"
+    },
+    {
+      "name": "Ayush Tyagi",
+      "about": "Front-End Developer",
+      "twitter": "",
+      "linkedin": "",
+      "instagram": "",
+      "avatar": ""
+    }
+  ]
 }
