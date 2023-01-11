@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
+import Login from "./pages/Login";
 import Footer from "./components/Footer";
 
 import "./assets/css/App.css";
@@ -10,6 +11,7 @@ import "./assets/css/App.css";
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
   { path: "/dashboard", element: <Dashboard /> },
+  { path: "/login", element: <Login /> },
 ]);
 
 const App = () => {

@@ -104,6 +104,10 @@
 }
 
 @media only screen and (max-width: 960px) {
+  .team {
+    height: max-content;
+  }
+
   .team .team-content header {
     padding: 0 6%;
     text-align: center;
@@ -111,7 +115,6 @@
 
   .team .team-content {
     grid-template-columns: repeat(1, 1fr);
-    height: max-content;
   }
 
   .team-card {
