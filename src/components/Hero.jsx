@@ -16,7 +16,7 @@ export default function Hero() {
 
       <header>
         <h2>We help you</h2>
-        <h1>Learn</h1>
+        <h1>Learn.</h1>
         <button>View Dashboard</button>
       </header>
 

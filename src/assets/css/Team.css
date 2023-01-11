@@ -1,0 +1,65 @@
+.team {
+  height: 100vh;
+  width: 100vw;
+}
+
+.team h2 {
+    font-size: 3rem;
+}
+
+.team h3 {
+    font-size: 2rem;
+}
+
+.team .team-card p {
+    background-color: yellow;
+    font-size: 1rem;
+}
+
+.team p {
+    font-size: 2rem;
+}
+
+.team .deco-rect {
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  top: 100%;
+  /* transform: scale(20%); */
+  transform: translateY(-50%);
+  z-index: -100;
+}
+
+.team .team-content {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: green; */
+  align-items: center;
+  justify-content: space-around;
+}
+
+.team-card {
+  display: grid;
+  height: fit-content;
+  width: fit-content;
+  background-color: green;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.card {
+    padding: 2rem 1rem 2rem 1rem;
+    background-color: red;
+    height: fit-content;
+    width: fit-content;
+}
+.card:hover {
+    background-color: wheat;
+}
+
+.card img {
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+}

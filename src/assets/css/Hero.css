@@ -1,9 +1,9 @@
 .hero {
+  background-color: var(--col-pri);
   height: 100vh;
   width: 100vw;
   margin: 0;
   padding: 0;
-  background-color: red;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   grid-template-rows: 72px 1fr;
@@ -12,12 +12,10 @@
 .hero nav {
   width: 100%;
   height: 100%;
-  background-color: green;
   grid-column: span 2;
 }
 
 .hero ul {
-  background-color: grey;
   width: 100%;
   height: 100%;
   display: flex;
@@ -26,24 +24,26 @@
 }
 
 .hero header {
-  background-color: green;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
+/** TODO: FIX THIS **/
 .hero h1 {
-  background-color: red;
-  font-size: 4em;
+  transform: translateY(-20%);
+}
+
+.hero h1 {
+  font-size: 6em;
   color: white;
 }
 .hero h2 {
-  font-size: 1.5em;
+  font-size: 2em;
   color: white;
 }
 
 .hero-img {
-  background-color: aqua;
 }
