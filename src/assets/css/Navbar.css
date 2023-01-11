@@ -1,17 +1,14 @@
-nav {
+.nav-bar {
   background-color: var(--col-pri);
 }
 
-nav ul {
+.nav-bar ul {
   background-color: red;
   height: auto;
 }
 
-nav ul li {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+.nav-bar ul li {
+  padding: 1rem;
   font-size: 16px;
   color: white;
 
@@ -24,14 +21,14 @@ nav ul li {
   gap: 1rem;
 }
 
-nav ul svg {
+.nav-bar ul svg {
   background-color: green;
   height: 40px;
   width: 40px;
   padding-left: 20px;
 }
 
-nav ul li:hover {
+.nav-bar ul li:hover {
   color: black;
   background-color: white;
 }

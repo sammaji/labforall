@@ -1,5 +1,5 @@
 import React from "react";
-
+import dasboard_preview from "../assets/img/dashboard.png"
 import "../assets/css/Hero.css";
 
 const Hero = () => {
@@ -15,13 +15,17 @@ const Hero = () => {
         </ul>
       </nav>
 
-      <header>
-        <h2>We help you</h2>
-        <h1>Learn.</h1>
-        <button>View Dashboard</button>
-      </header>
+      <div className="grid-child-outer">
+        <header className="grid-child-inner">
+          <h2>We help you</h2>
+          <h1>Learn.</h1>
+          <button>View Dashboard</button>
+        </header>
+      </div>
 
-      <div className="hero-img"></div>
+      <div className="hero-img grid-child-outer">
+        <img src={dasboard_preview} />
+      </div>
     </div>
   );
 };

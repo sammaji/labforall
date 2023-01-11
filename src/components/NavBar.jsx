@@ -11,7 +11,7 @@ const NavBar = () => {
   }
 
   return (
-    <nav>
+    <nav className="navbar">
       <header>
         <button onClick={toggle_menu}>{"  <  "}</button>
       </header>
