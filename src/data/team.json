@@ -1,0 +1,36 @@
+{
+    "data": [
+        {
+            "name": "Samyabrata Maji",
+            "about": "Frontend Engineer",
+            "twitter": "https://twitter.com/sammaji15",
+            "linkedin": "https://linkedin.com/in/samyabrata-maji",
+            "instagram": "https://instagram.com/sammaji15",
+            "avatar": "https://avatars.githubusercontent.com/u/116789799?v=4"
+        },
+        {
+            "name": "Ayush Tyagi",
+            "about": "",
+            "twitter": "",
+            "linkedin": "",
+            "instagram": "",
+            "avatar": ""
+        },
+        {
+            "name": "kartik S...",
+            "about": "",
+            "twitter": "",
+            "linkedin": "",
+            "instagram": "",
+            "avatar": ""
+        },
+        {
+            "name": "Swapnoneel ...",
+            "about": "",
+            "twitter": "",
+            "linkedin": "",
+            "instagram": "",
+            "avatar": ""
+        }
+    ]
+}
