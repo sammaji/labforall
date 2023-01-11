@@ -33,7 +33,6 @@
 .team .team-content {
   display: flex;
   flex-wrap: wrap;
-  /* background-color: green; */
   align-items: center;
   justify-content: space-around;
 }
@@ -49,6 +48,7 @@
 }
 
 .card {
+    border-radius: 1rem;
     padding: 2rem 1rem 2rem 1rem;
     background-color: red;
     height: fit-content;
