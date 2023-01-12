@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import './assets/css/Animation.css'
 import Dashboard from "./pages/Dashboard";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";

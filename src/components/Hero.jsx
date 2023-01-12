@@ -19,7 +19,6 @@ const Hero = () => {
         <header className="grid-child-inner">
           <h2>We help you</h2>
           <h1>Learn.</h1>
-          <button>View Dashboard</button>
         </header>
       </div>
 
