@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  AiOutlineTwitter,
-  AiFillLinkedin,
-  AiOutlineInstagram,
-} from "react-icons/ai";
+
 import ic_twitter from "../assets/svg/ic-twitter.svg";
 import ic_github from "../assets/svg/ic-github.svg";
 import ic_linkedin from "../assets/svg/ic-linkedin.svg";

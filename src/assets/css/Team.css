@@ -67,13 +67,14 @@
   display: flex;
   flex-direction: column;
   max-width: 380px;
-  padding: 4rem 1rem 4rem 1rem;
+  padding: 4rem 1rem 2.5rem 1rem;
   text-align: center;
-  width: 75%;
+  /* width: 75%; */
   max-height: 360px;
 }
 
 .team-card .card h3 {
+  margin-top: 0.2rem;
   font-size: 1.4rem;
   white-space: nowrap;
 }
@@ -92,7 +93,7 @@
 
 .team-card .card p {
   font-size: 1rem;
-  height: 4.5rem;
+  height: 4.8rem;
 }
 
 .team-card .card span {
@@ -112,6 +113,7 @@
 .ic-socials {
   height: 32px;
   width: auto;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 960px) {
