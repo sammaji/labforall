@@ -1,7 +1,8 @@
 import React from "react";
 import { AiOutlineGoogle, AiFillFacebook, AiFillGithub } from "react-icons/ai";
 
-import { signIn, socialSignUp } from "../utils/auth/socialLogin.util";
+import socialSignUp from "../utils/auth/socialLogin.util";
+import signIn from "../utils/auth/signIn.util";
 
 import "../assets/css/Login.css";
 
@@ -18,9 +19,7 @@ const Login = () => {
   const handleSubmit = () => {
     if (emailRef.current && pwdRef.current) {
       signIn(emailRef.current.value, pwdRef.current.value)
-        .then((credentials) => {
-          
-        })
+        .then((credentials) => {})
         .catch((err) => {
           setError(err.message || "An unknown error occured");
         });

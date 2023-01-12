@@ -1,17 +1,12 @@
-import {
-  GoogleAuthProvider,
-  signInWithEmailAndPassword,
-  signInWithPopup,
-} from "firebase/auth";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+
 import { auth } from "../config/firebase.config";
-import validateEmail from "../helpers/validateEmail.util";
-import validatePassword from "../helpers/validatePassword.util";
 
 const providers = {
   google: new GoogleAuthProvider(),
 };
 
-export const socialSignUp = async (option) => {
+export default async (option) => {
   const provider = providers[option];
 
   return signInWithPopup(auth, provider)
@@ -32,33 +27,8 @@ export const socialSignUp = async (option) => {
       return result;
     })
     .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
+      console.log(error);
       const email = error.customData.email;
       const credential = provider.credentialFromError(error);
-    });
-};
-
-export const signIn = async (email, password) => {
-  email = email.trim();
-  password = password.trim();
-
-  if (!validateEmail(email)) {
-    throw new Error("Invalid Email");
-  }
-
-  if (!validatePassword(password)) {
-    throw new Error("Invalid Password");
-  }
-
-  return signInWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-      const user = userCredential.user;
-      console.log(userCredential);
-      return userCredential
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
     });
 };
