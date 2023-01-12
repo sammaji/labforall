@@ -1,34 +1,39 @@
-.nav-bar {
+.navbar {
   background-color: var(--col-pri);
 }
 
-.nav-bar ul {
-  background-color: red;
+.navbar ul {
   height: auto;
 }
 
-.nav-bar ul li {
+.navbar ul li {
   padding: 1rem;
   font-size: 16px;
-  color: white;
-
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: flex-start;
-  background-color: antiquewhite; */
+  justify-content: center;
   display: grid;
   grid-template-columns: 40px 1fr;
   gap: 1rem;
 }
 
-.nav-bar ul svg {
-  background-color: green;
-  height: 40px;
-  width: 40px;
-  padding-left: 20px;
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
 }
 
-.nav-bar ul li:hover {
-  color: black;
+.navbar ul svg {
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  color: white;
+}
+
+.navbar ul li:hover {
   background-color: white;
 }
+
+.navbar ul li:hover a, .navbar ul li:hover svg {
+  color: black;
+}
+

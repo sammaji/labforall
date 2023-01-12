@@ -2,7 +2,7 @@
   "data": [
     {
       "name": "Samyabrata Maji",
-      "about": "Front-End Developer",
+      "about": "UI/UX Designer and Front-End Developer",
       "twitter": "https://twitter.com/sammaji15",
       "linkedin": "https://linkedin.com/in/samyabrata-maji",
       "instagram": "https://instagram.com/sammaji15",
@@ -10,15 +10,15 @@
     },
     {
       "name": "Swapnoneel Saha",
-      "about": "Front-End Developer and Content Writer",
+      "about": "Content Writer and Front-End Developer",
       "twitter": "https://twitter.com/Swapnoneel6",
       "linkedin": "",
       "instagram": "",
-      "avatar": ""
+      "avatar": "https://avatars.githubusercontent.com/u/121167506?v=4"
     },
     {
       "name": "Karthik S",
-      "about": "Full Stack Developer (Web | Android | Blockchain)",
+      "about": "Full Stack Developer",
       "twitter": "https://twitter.com/0xkarthikjr",
       "linkedin": "https://www.linkedin.com/in/karthik-is-dev",
       "instagram": "https://www.instagram.com/0xkarthiks",
@@ -30,7 +30,7 @@
       "twitter": "",
       "linkedin": "",
       "instagram": "",
-      "avatar": ""
+      "avatar": "https://avatars.githubusercontent.com/u/89740972?v=4"
     }
   ]
 }

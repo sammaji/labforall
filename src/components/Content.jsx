@@ -4,7 +4,7 @@ import "../assets/css/Content.css";
 
 const Content = () => {
   const calculateDimensions = () => {
-    return [128, 128];
+    return [(9*600)/16, 600];
   };
 
   const [height, width] = calculateDimensions();
@@ -17,7 +17,11 @@ const Content = () => {
       </div>
 
       <div>
-        <img height={height} width={width} />
+        <iframe
+          width={width}
+          height={height}
+          src="https://www.youtube.com/embed/tgbNymZ7vqY"
+        ></iframe>
       </div>
 
       <div>

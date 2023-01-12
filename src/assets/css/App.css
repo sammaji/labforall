@@ -5,6 +5,10 @@
   grid-template-columns: 200px 2fr 1fr;
 }
 
+.hello {
+  grid-template-columns: 100px 2fr 1fr;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 5px;

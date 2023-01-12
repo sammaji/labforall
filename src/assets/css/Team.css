@@ -1,23 +1,24 @@
 .team {
   align-items: center;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   padding: 10% 0;
+  padding-top: 20vh;
   position: relative;
   width: 100vw;
 }
 
 .team h2 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .team h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .team p {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .team .deco-rect {
@@ -43,7 +44,7 @@
 }
 
 .team .team-content header {
-  padding: 0 18%;
+  padding: 4rem 18%;
 }
 
 .team-card {
@@ -58,22 +59,18 @@
 
 .team-card .card {
   align-items: center;
-  background-color: rgb(246, 246, 246);
+  background-color: #fff;
   border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
-    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
-    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  box-shadow: 0px 0px 1.5px -4px rgba(0, 0, 0, 0.028),
+    0px 0px 5.5px -4px rgba(0, 0, 0, 0.042),
+    0px 0px 42px -4px rgba(0, 0, 0, 0.07);
   display: flex;
   flex-direction: column;
   max-width: 380px;
-  padding: 2rem 1rem 2rem 1rem;
+  padding: 4rem 1rem 4rem 1rem;
   text-align: center;
   width: 75%;
   max-height: 360px;
-}
-
-.team-card .card:hover {
-  background-color: wheat;
 }
 
 .team-card .card h3 {
@@ -81,7 +78,7 @@
   white-space: nowrap;
 }
 
-.team-card .card img {
+.team-card .card > img {
   border-radius: 50%;
   height: 72px;
   width: 72px;
@@ -99,8 +96,14 @@
   gap: 10px;
 }
 
-.team-card .card span svg {
-  font-size: 1.75rem;
+.team-card .card span a:hover img {
+  transform: scale(1.2);
+  transition: all 0.1s ease-in;
+}
+
+.ic-socials {
+  height: 32px;
+  width: auto;
 }
 
 @media only screen and (max-width: 960px) {
