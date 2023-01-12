@@ -1,10 +1,22 @@
-import React from "react";
+import React, { memo, useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 import "../assets/css/Content.css";
+import { fetchExperiment } from "../utils/data/fetchExperiment.data";
 
 const Content = () => {
+  const { classId, subject, exp } = useParams();
+  const [content, setContent] = useState(null);
+
+  useEffect(() => {
+    fetchExperiment(classId, subject, exp).then((data) => {
+      console.log(data);
+      setContent(data);
+    });
+  }, []);
+
   const calculateDimensions = () => {
-    return [(9*600)/16, 600];
+    return [(9 * 600) / 16, 600];
   };
 
   const [height, width] = calculateDimensions();
@@ -42,4 +54,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default memo(Content);

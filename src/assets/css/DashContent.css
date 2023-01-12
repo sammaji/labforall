@@ -1,0 +1,56 @@
+.dashc {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashc-content {
+  border-radius: 10px;
+  background: #666;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  overflow: hidden;
+}
+
+.dashc-card {
+  font-size: 20px;
+  background: #9701f0;
+  border-bottom: 1px solid rgba(63, 46, 73, 0.3);
+}
+
+.dashc-card:last-child {
+  border-bottom: none;
+}
+
+.dashc-link,
+.dashc-sublink {
+  text-decoration: none;
+  padding: 16px 20px;
+  display: block;
+  color: #fff;
+}
+
+.dashc-submenu {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s;
+  background: #3f2e49;
+}
+
+/* .dashc-submenu:target { */
+.dashc-submenu {
+  max-height: 10rem;
+}
+
+.dashc-submenu-link {
+  font-size: 16px;
+  background: transparent;
+  transition: background 0.2s ease-in;
+}
+
+.dashc-submenu-link:hover {
+  background: #36253f;
+}
