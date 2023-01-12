@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./assets/css/Animation.css";
+
+import Analytics from "./components/Analytics";
 import Content from "./components/Content";
 import DashContent from "./components/DashContent";
 import ExperimentList from "./components/ExperimentList";
@@ -10,15 +11,17 @@ import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 
 import "./assets/css/App.css";
+import "./assets/css/Animation.css";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
   { path: "/login", element: <Login /> },
   { path: "/signup", element: <SignUp /> },
   {
-    path: "/dashboard",
+    path: "/",
     element: <Dashboard />,
     children: [
+      { path: "/analytics/", element: <Analytics /> },
       { path: "/dashboard/", element: <DashContent /> },
       { path: "/dashboard/:classId/:subject", element: <ExperimentList /> },
       { path: "/dashboard/:classId/:subject/:exp", element: <Content /> },

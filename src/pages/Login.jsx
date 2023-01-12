@@ -1,14 +1,19 @@
 import React from "react";
+
 import ic_google from "../assets/svg/ic-google.svg";
 import ic_facebook from "../assets/svg/ic-facebook.svg";
 import ic_github from "../assets/svg/ic-github.svg";
 import pic_login from "../assets/img/pic-login.jpg";
+import { useAnalytics } from "use-analytics";
+
 import socialSignUp from "../utils/auth/socialLogin.util";
 import signIn from "../utils/auth/signIn.util";
 
 import "../assets/css/Login.css";
 
 const Login = () => {
+  const { track, page, identify } = useAnalytics();
+
   const emailRef = React.useRef(null);
   const pwdRef = React.useRef(null);
 
@@ -21,7 +26,11 @@ const Login = () => {
   const handleSubmit = () => {
     if (emailRef.current && pwdRef.current) {
       signIn(emailRef.current.value, pwdRef.current.value)
-        .then((credentials) => {})
+        .then((credentials) => {
+          try {
+            identify("user", { email: credentials.email });
+          } catch (e) {}
+        })
         .catch((err) => {
           setError(err.message || "An unknown error occured");
         });
