@@ -1,3 +1,8 @@
+.about-us > img {
+  width: 100vw;
+  height: auto;
+}
+
 .about-us-main {
   margin-top: 4rem;
   margin-bottom: 4rem;
