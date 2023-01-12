@@ -1,4 +1,34 @@
 .login {
+  align-items: center;
+  display: flex;
   height: 100vh;
+  justify-content: center;
   width: 100vw;
+}
+
+.login-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-content .login-button {
+  background: rgb(6, 85, 255);
+  border-radius: 1rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  padding: 4px 1.2rem;
+}
+
+.login-content .login-social {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.login-content .login-social svg {
+  cursor: pointer;
+  font-size: 2.8rem;
 }
