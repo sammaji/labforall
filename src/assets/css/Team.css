@@ -1,7 +1,7 @@
 .team {
-  align-items: center;
   display: flex;
   min-height: 100vh;
+  align-items: center;
   justify-content: center;
   padding: 10% 0;
   padding-top: 20vh;
@@ -39,7 +39,6 @@
 
 .team .team-content {
   display: grid;
-  justify-items: center;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -66,10 +65,12 @@
     0px 0px 42px -4px rgba(0, 0, 0, 0.07);
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  width: 24vw;
+  min-width: 120px;
   max-width: 380px;
   padding: 4rem 1rem 2.5rem 1rem;
   text-align: center;
-  /* width: 75%; */
   max-height: 360px;
 }
 
