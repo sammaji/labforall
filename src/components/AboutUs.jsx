@@ -14,7 +14,7 @@ const AboutUs = () => {
           {
         about_json.data.map((item, index) => {
           return (
-            <div>
+            <div key={index}>
               <h3><span>{`0${index+1}. `}</span>{item.title}</h3>
               <p>{item.value}</p>
             </div>
