@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar System</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        overflow: hidden;
+      }
+
+      .webgl {
+        left: 0;
+        outline: none;
+        position: fixed;
+        top: 0;
+      }
+
+      .loading {
+        background: #000000;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        z-index: 99;
+      }
+
+      .loading.ended {
+        opacity: 0%;
+        transition: opacity 1.5s ease-in-out;
+      }
+
+      .loading__bar {
+        background: #ffffff;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        transform-origin: top left;
+        transform: scaleX(0);
+        transition: transform 0.5s;
+        width: 100%;
+        z-index: 99;
+      }
+
+      .loading__bar.ended {
+        transform-origin: 100% 0;
+        transform: scaleX(0);
+        transition: transform 1.5s ease-in-out;
+      }
+
+      #sidepanel {
+        background-color: rgba(236, 236, 236, 0.785);
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        left: 0;
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        z-index: 1000;
+      }
+
+      #sidepanel p {
+        margin-bottom: 5px;
+        text-align: center;
+      }
+
+      #sidepanel button {
+        background-color: rgba(60, 60, 60, 0.15);
+        border: none;
+        color: #ffefef;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto 10px;
+        padding: 5px;
+        transition: all 0.4s;
+      }
+
+      #sidepanel button:hover {
+        background-color: rgba(60, 60, 60, 0.4);
+        transform: scale(1.1);
+      }
+
+      #info {
+        background-color: rgba(236, 236, 236, 0.785);
+        border-radius: 1.2rem;
+        color: #ffefef;
+        margin: 20px;
+        max-width: 15%;
+        padding: 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        visibility: hidden;
+        z-index: 98;
+      }
+
+      #info p {
+        color: #161616;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading"></div>
+    <div class="loading__bar"></div>
+    <div id="sidepanel">
+      <div id="sun">
+        <p>Sun</p>
+        <button id="sunLocate">Learn More ></button>
+      </div>
+      <div id="mercury">
+        <p>Mercury</p>
+        <button id="mercuryLocate">Learn More ></button>
+      </div>
+      <div id="venus">
+        <p>Venus</p>
+        <button id="venusLocate">Learn More ></button>
+      </div>
+      <div id="earth">
+        <p>Earth</p>
+        <button id="earthLocate">Learn More ></button>
+      </div>
+      <div id="mars">
+        <p>Mars</p>
+        <button id="marsLocate">Learn More ></button>
+      </div>
+      <div id="jupiter">
+        <p>Jupiter</p>
+        <button id="jupiterLocate">Learn More ></button>
+      </div>
+      <div id="saturn">
+        <p>Saturn</p>
+        <button id="saturnLocate">Learn More ></button>
+      </div>
+      <div id="uranus">
+        <p>Uranus</p>
+        <button id="uranusLocate">Learn More ></button>
+      </div>
+      <div id="neptune">
+        <p>Neptune</p>
+        <button id="neptuneLocate">Learn More ></button>
+      </div>
+    </div>
+
+    <div id="info">
+      <h3>Name</h3>
+      <p id="name"></p>
+      <h3>Mass</h3>
+      <p id="mass"></p>
+      <h3>Diameter</h3>
+      <p id="diameter"></p>
+      <h3>Gravity</h3>
+      <p id="gravity"></p>
+      <h3>Length of Year</h3>
+      <p id="lengthOfYear"></p>
+      <h3>Length of day</h3>
+      <p id="lengthOfDay"></p>
+      <h3>Description</h3>
+      <p id="desc"></p>
+    </div>
+
+    <canvas class="webgl"></canvas>
+
+    <script type="module" src="./simulations/index.js"></script>
+  </body>
+</html>
