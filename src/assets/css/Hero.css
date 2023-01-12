@@ -1,6 +1,7 @@
 .hero {
   background-color: var(--col-pri);
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -65,5 +66,3 @@ img {
   cursor: default;
 }
 
-.hero-img {
-}
