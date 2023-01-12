@@ -18,6 +18,7 @@
 - CSS
 - Figma
 - Firebase
+- ThreeJs
 
 
 ## Challenges we ran into
