@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineGoogle, AiFillFacebook, AiFillGithub } from "react-icons/ai";
+import { useAnalytics } from "use-analytics";
 
 import socialSignUp from "../utils/auth/socialLogin.util";
 import signIn from "../utils/auth/signIn.util";
@@ -7,6 +8,8 @@ import signIn from "../utils/auth/signIn.util";
 import "../assets/css/Login.css";
 
 const Login = () => {
+  const { track, page, identify } = useAnalytics();
+
   const emailRef = React.useRef(null);
   const pwdRef = React.useRef(null);
 
@@ -19,7 +22,11 @@ const Login = () => {
   const handleSubmit = () => {
     if (emailRef.current && pwdRef.current) {
       signIn(emailRef.current.value, pwdRef.current.value)
-        .then((credentials) => {})
+        .then((credentials) => {
+          try {
+            identify("user", { email: credentials.email });
+          } catch (e) {}
+        })
         .catch((err) => {
           setError(err.message || "An unknown error occured");
         });

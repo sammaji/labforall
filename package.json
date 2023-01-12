@@ -11,15 +11,21 @@
   "dependencies": {
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.3",
+    "analytics": "^0.8.1",
+    "axios": "^1.2.2",
+    "chart.js": "^4.1.2",
     "events": "^3.3.0",
     "firebase": "^9.15.0",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.6.2",
-    "three": "^0.148.0"
+    "three": "^0.148.0",
+    "use-analytics": "^0.0.5"
   },
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react": "^3.0.0",

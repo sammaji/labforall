@@ -4,8 +4,11 @@ import { redirect } from "react-router-dom";
 import signUp from "../utils/auth/signUp.util";
 
 import "../assets/css/Login.css";
+import { useAnalytics } from "use-analytics";
 
 const SignUp = () => {
+  const { track, page, identify } = useAnalytics();
+
   const emailRef = React.useRef(null);
   const pwdRef = React.useRef(null);
   const nameRef = React.useRef(null);
@@ -27,6 +30,9 @@ const SignUp = () => {
         phone: phoneRef.current.value,
       })
         .then((credentials) => {
+          try {
+            identify("user", { email: credentials.email });
+          } catch (e) {}
           return redirect("/");
         })
         .catch((err) => {
