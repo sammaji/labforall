@@ -1,6 +1,8 @@
 import React from "react";
-import { AiOutlineGoogle, AiFillFacebook, AiFillGithub } from "react-icons/ai";
-
+import ic_google from "../assets/svg/ic-google.svg";
+import ic_facebook from "../assets/svg/ic-facebook.svg";
+import ic_github from "../assets/svg/ic-github.svg";
+import pic_login from "../assets/img/pic-login.jpg";
 import socialSignUp from "../utils/auth/socialLogin.util";
 import signIn from "../utils/auth/signIn.util";
 
@@ -28,32 +30,37 @@ const Login = () => {
 
   return (
     <div className="login">
-      <div className="login-content">
-        {error && <p className="login-error error">{error}</p>}
-        <div className="login-title">Login</div>
-        <input
-          type="text"
-          label="Email"
-          id="email"
-          ref={emailRef}
-          className="login-name"
-          placeholder="Email"
-        />
-        <input
-          type="password"
-          label="password"
-          id="password"
-          ref={pwdRef}
-          className="login-password"
-          placeholder="enter password"
-        />
-        <button className="login-button" onClick={handleSubmit}>
-          Login{" "}
-        </button>
-        <div className="login-social">
-          <AiOutlineGoogle onClick={() => socialSignUp("google")} />
-          <AiFillFacebook />
-          <AiFillGithub />
+      <div className="login-container">
+        <div className="login-img-container">
+          <img src={pic_login}></img>
+        </div>
+        <div className="login-content">
+          <div className="login-title"><h2>Login<span>.</span></h2></div>
+          <input
+            type="text"
+            label="Email"
+            id="email"
+            ref={emailRef}
+            className="login-name"
+            placeholder="Email"
+          />
+          <input
+            type="password"
+            label="password"
+            id="password"
+            ref={pwdRef}
+            className="login-password"
+            placeholder="Password"
+          />
+          {error && <p className="login-error error">{error}</p>}
+          <button className="login-button" onClick={handleSubmit}>
+            Login{" "}
+          </button>
+          <div className="login-social">
+            <img src={ic_google} onClick={() => socialSignUp("google")} />
+            <img src={ic_facebook} />
+            <img src={ic_github}></img>
+          </div>
         </div>
       </div>
     </div>

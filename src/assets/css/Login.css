@@ -1,26 +1,88 @@
+:root {
+  --ht: 48px;
+  --wd: 240px;
+}
+
 .login {
   align-items: center;
+  flex-direction: row;
   display: flex;
   height: 100vh;
   justify-content: center;
   width: 100vw;
 }
 
-.login-content {
-  align-items: center;
+.login h2 {
+  font-size: 2rem;
+}
+
+.login h2 > span {
+  color: var(--col-pri);
+  font-size: 2rem;
+}
+
+.login-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--col-pri);
+  border-radius: 0.5rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.login-img-container {
+  width: 40vw;
+  height: 80vh;
+  max-width: 360px;
+  max-height: 420px;
+}
+
+.login-img-container > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 50%;
+}
+
+.login-content {
+  background-color: white;
+  width: 40vw;
+  height: 80vh;
+  max-width: 360px;
+  max-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   flex-direction: column;
   gap: 10px;
 }
 
+.login-content input {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: var(--ht);
+  width: var(--wd);
+  outline: none;
+}
+
 .login-content .login-button {
-  background: rgb(6, 85, 255);
-  border-radius: 1rem;
   border: none;
+  border-radius: 4px;
+  background: rgb(6, 85, 255);
+  height: var(--ht);
+  width: var(--wd);
   color: white;
   cursor: pointer;
   outline: none;
   padding: 4px 1.2rem;
+  transition: all 0.2s ease-in;
+}
+
+.login-content .login-button:hover {
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.2s ease-in;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .login-content .login-social {
@@ -31,4 +93,21 @@
 .login-content .login-social svg {
   cursor: pointer;
   font-size: 2.8rem;
+}
+
+.login-error {
+  font-size: 0.3rem;
+  color: red;
+}
+
+.login-social img {
+  cursor: pointer;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.login-social img:hover {
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
 }
