@@ -52,7 +52,6 @@ img {
   width: auto;
 }
 
-/** TODO: FIX THIS **/
 .hero h1 {
   font-size: 6em;
   color: white;
@@ -65,4 +64,3 @@ img {
   color: white;
   cursor: default;
 }
-

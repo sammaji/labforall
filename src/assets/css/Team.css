@@ -50,7 +50,7 @@
 .team-card {
   background-color: transparent;
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   grid-column: span 2;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
