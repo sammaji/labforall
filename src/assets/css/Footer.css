@@ -7,6 +7,8 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   padding: 2rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 footer ul {
