@@ -2,7 +2,7 @@ import { FaBeer } from "react-icons/fa";
 
 const MENU_DATA = [
   {
-    title: "Profile",
+    title: "Performance",
     to: "profile",
     icon: FaBeer,
   },
