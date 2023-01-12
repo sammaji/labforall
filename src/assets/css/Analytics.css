@@ -1,0 +1,37 @@
+.analytics {
+  align-items: center;
+  display: flex;
+  grid-column: span 2;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.analytics-content {
+  display: grid;
+  padding: 4rem;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.analytics-performance {
+  width: 100%;
+  height: 100%;
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.analytics-comments {
+  padding: 2rem 1rem;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.analytics-comments textarea {
+  resize: none;
+  padding: 1rem 0.4rem;
+  width: 100%;
+  height: 100%;
+}

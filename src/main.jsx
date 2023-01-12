@@ -1,10 +1,27 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './assets/css/index.css'
+import Analytics from "analytics";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { AnalyticsProvider } from "use-analytics";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+import App from "./App";
+
+import "./assets/css/index.css";
+
+const analytics = Analytics({
+  app: "awesome-app",
+  plugins: [
+    {
+      name: "ai-user-tracking",
+      page: ({ payload }) => {},
+      track: ({ payload }) => {},
+    },
+  ],
+});
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <AnalyticsProvider instance={analytics}>
+      <App />
+    </AnalyticsProvider>
+  </React.StrictMode>
+);
