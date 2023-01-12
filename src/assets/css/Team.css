@@ -1,7 +1,7 @@
 .team {
-  align-items: center;
   display: flex;
   min-height: 100vh;
+  align-items: center;
   justify-content: center;
   padding: 10% 0;
   padding-top: 20vh;
@@ -39,7 +39,6 @@
 
 .team .team-content {
   display: grid;
-  justify-items: center;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -50,7 +49,7 @@
 .team-card {
   background-color: transparent;
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   grid-column: span 2;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -66,10 +65,12 @@
     0px 0px 42px -4px rgba(0, 0, 0, 0.07);
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  width: 24vw;
+  min-width: 120px;
   max-width: 380px;
   padding: 4rem 1rem 2.5rem 1rem;
   text-align: center;
-  /* width: 75%; */
   max-height: 360px;
 }
 
@@ -83,6 +84,12 @@
   border-radius: 50%;
   height: 72px;
   width: 72px;
+  margin-bottom: 1.5rem;
+}
+
+.team-card .card > img:hover {
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
 }
 
 .team-card .card p {
@@ -98,8 +105,10 @@
 }
 
 .team-card .card span a:hover img {
-  transform: scale(1.2);
-  transition: all 0.1s ease-in;
+  /* transform: scale(1.2);
+  transition: all 0.1s ease-in; */
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
 }
 
 .ic-socials {
@@ -114,7 +123,7 @@
   }
 
   .team .team-content header {
-    padding: 0 6%;
+    padding: 10% 6%;
     text-align: center;
   }
 

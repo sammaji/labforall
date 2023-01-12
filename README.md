@@ -7,13 +7,14 @@
 First clone this repository. You can also fork this repository and then clone the forked one.
 
 ```
-git clone https://github.com/samyabrata-maji/experiments-guide
+git clone https://github.com/samyabrata-maji/experiments-website
 ```
 
 Make sure you have Node Package Manager (npm) installed. Will work with most versions, but the latest (LTS) is recommended.
 
 Now you need to install all the dependencies.
 ```
+cd experiments-website
 yarn install
 ```
 

@@ -2,18 +2,20 @@
   "data": [
     {
       "name": "Samyabrata Maji",
-      "about": "UI/UX Designer and Front-End Developer",
+      "about": "Front-End Developer and UI/UX Designer",
       "twitter": "https://twitter.com/sammaji15",
       "linkedin": "https://linkedin.com/in/samyabrata-maji",
       "instagram": "https://instagram.com/sammaji15",
+      "github": "https://github.com/samyabrata-maji",
       "avatar": "https://avatars.githubusercontent.com/u/116789799?v=4"
     },
     {
       "name": "Swapnoneel Saha",
-      "about": "Content Writer and Front-End Developer",
+      "about": "Front-End Developer and Content Writer",
       "twitter": "https://twitter.com/Swapnoneel6",
-      "linkedin": "",
-      "instagram": "",
+      "linkedin": "https://www.linkedin.com/in/swapnoneel-saha-14a3161b6/",
+      "instagram": "https://www.instagram.com/toxizen/",
+      "github": "https://github.com/Swpn0neel",
       "avatar": "https://avatars.githubusercontent.com/u/121167506?v=4"
     },
     {
@@ -22,14 +24,16 @@
       "twitter": "https://twitter.com/0xkarthikjr",
       "linkedin": "https://www.linkedin.com/in/karthik-is-dev",
       "instagram": "https://www.instagram.com/0xkarthiks",
+      "github": "https://github.com/KarthikS373",
       "avatar": "https://avatars.githubusercontent.com/u/96634646?v=4"
     },
     {
       "name": "Ayush Tyagi",
       "about": "Front-End Developer",
-      "twitter": "",
+      "twitter": "https://twitter.com/ayushhtyagi",
       "linkedin": "",
       "instagram": "",
+      "github": "https://github.com/ayushtyagi14",
       "avatar": "https://avatars.githubusercontent.com/u/89740972?v=4"
     }
   ]

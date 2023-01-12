@@ -1,0 +1,71 @@
+{
+    "data": [
+        {
+            "heading": "Socials",
+            "list": [
+                {
+                    "title": "Twitter",
+                    "url": "https://twitter.com/sammaji15"
+                },
+                {
+                    "title": "Linkedin",
+                    "url": "https://linkedin.com/in/samyabrata-maji"
+                },
+                {
+                    "title": "Github",
+                    "url": "https://github.com/samyabrata-maji"
+                },
+                {
+                    "title": "Instagram",
+                    "url": "https://instagram.com/sammaji15"
+                },
+                {
+                    "title": "Dribbble",
+                    "url": "https://github.com/samyabrata-maji"
+                },
+                {
+                    "title": "Behance",
+                    "url": "https://github.com/samyabrata-maji"
+                }
+            ]
+        },
+        {
+            "heading": "Products",
+            "list": [
+                {
+                    "title": "Experiment Guide",
+                    "url": "..."
+                },
+                {
+                    "title": "Interactive Examples",
+                    "url": "..."
+                },
+                {
+                    "title": "support",
+                    "url": "..."
+                }
+            ]
+        },
+        {
+            "heading": "Company",
+            "list": [
+                {
+                    "title": "Usage",
+                    "url": "https://<base-url>.dom/docs/how-to-use"
+                },
+                {
+                    "title": "Community Guidelines",
+                    "url": "https://<base-url>.dom/docs/community-guidelines"
+                },
+                {
+                    "title": "Terms and Condition",
+                    "url": "https://<base-url>.dom/docs/terms-and-condition"
+                },
+                {
+                    "title": "Privacy Policy",
+                    "url": "https://<base-url>.dom/docs/privacy-policy"
+                }
+            ]
+        }
+    ]
+}

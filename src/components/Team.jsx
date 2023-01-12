@@ -27,16 +27,16 @@ const Team = () => {
                 <h3>{item.name}</h3>
                 <p>{item.about}</p>
                 <span>
-                  <a href={item.twitter}>
+                  <a href={item.twitter} target={'_blank'} rel={"noreferrer noopener"}>
                     <img className="ic-socials" src={ic_twitter} />
                   </a>
-                  <a href={item.github}>
+                  <a href={item.github} target={'_blank'} rel={"noreferrer noopener"}>
                     <img className="ic-socials" src={ic_github} />
                   </a>
-                  <a href={item.linkedin}>
+                  <a href={item.linkedin} target={'_blank'} rel={"noreferrer noopener"}>
                     <img className="ic-socials" src={ic_linkedin} />
                   </a>
-                  <a href={item.instagram}>
+                  <a href={item.instagram} target={'_blank'} rel={"noreferrer noopener"}>
                     <img className="ic-socials" src={ic_instagram} />
                   </a>
                 </span>
