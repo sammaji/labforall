@@ -78,7 +78,7 @@
   white-space: nowrap;
 }
 
-.team-card .card img {
+.team-card .card > img {
   border-radius: 50%;
   height: 72px;
   width: 72px;
@@ -96,8 +96,14 @@
   gap: 10px;
 }
 
-.team-card .card span svg {
-  font-size: 1.75rem;
+.team-card .card span a:hover img {
+  transform: scale(1.2);
+  transition: all 0.1s ease-in;
+}
+
+.ic-socials {
+  height: 32px;
+  width: auto;
 }
 
 @media only screen and (max-width: 960px) {

@@ -1,5 +1,5 @@
 import React from "react";
-import deco_wave from "../assets/svg/wave.svg";
+import deco_wave from "../assets/svg/deco-wave.svg";
 import about_json from "../data/about.json";
 import "../assets/css/AboutUs.css"
 

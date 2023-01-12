@@ -4,6 +4,10 @@ import {
   AiFillLinkedin,
   AiOutlineInstagram,
 } from "react-icons/ai";
+import ic_twitter from "../assets/svg/ic-twitter.svg";
+import ic_github from "../assets/svg/ic-github.svg";
+import ic_linkedin from "../assets/svg/ic-linkedin.svg";
+import ic_instagram from "../assets/svg/ic-instagram.svg";
 
 import team_json from "../data/team.json";
 
@@ -27,9 +31,18 @@ const Team = () => {
                 <h3>{item.name}</h3>
                 <p>{item.about}</p>
                 <span>
-                  <AiOutlineTwitter color="#1d9bf0" />
-                  <AiFillLinkedin color="#0a66c2" />
-                  <AiOutlineInstagram color="#f70165" />
+                  <a href={item.twitter}>
+                    <img className="ic-socials" src={ic_twitter} />
+                  </a>
+                  <a href={item.github}>
+                    <img className="ic-socials" src={ic_github} />
+                  </a>
+                  <a href={item.linkedin}>
+                    <img className="ic-socials" src={ic_linkedin} />
+                  </a>
+                  <a href={item.instagram}>
+                    <img className="ic-socials" src={ic_instagram} />
+                  </a>
                 </span>
               </div>
             );
