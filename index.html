@@ -7,12 +7,13 @@
       href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="sim.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Experiments</title>
-    <script src="sim.js" defer></script>
   </head>
   <body>
-    <div id="con-sim">
+    <div id="root"></div>
+    <div id="con-sim" style="display: none;">
       <div class="loading"></div>
       <div class="loading__bar"></div>
       <div id="sidepanel">
@@ -115,7 +116,6 @@
           </button>
         </div>
       </div>
-
       <div id="info">
         <h3>Name</h3>
         <p id="name"></p>
@@ -135,7 +135,7 @@
       <canvas class="webgl"></canvas>
       <script type="module" src="./simulations/index.js"></script>
     </div>
-    <div id="root"></div>
+    <script type="module" src="sim.js"></script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
