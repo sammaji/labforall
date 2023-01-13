@@ -17,7 +17,7 @@
   gap: 1rem;
 }
 
-.navbar ul li a {
+.navbar ul a {
   text-decoration: none;
   color: white;
 }
@@ -33,7 +33,7 @@
   background-color: white;
 }
 
-.navbar ul li:hover a, .navbar ul li:hover svg {
+.navbar ul a:hover li, .navbar ul li:hover svg {
   color: black;
 }
 

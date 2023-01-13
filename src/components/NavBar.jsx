@@ -19,10 +19,12 @@ const NavBar = () => {
       <ul>
         {MENU_DATA.map((item, index) => {
           return (
-            <li key={index}>
-              <IoIosHelpCircleOutline />
-              <Link to={item.to}>{item.title}</Link>
-            </li>
+            <Link to={item.to} key={index}>
+              <li>
+                <IoIosHelpCircleOutline />
+                {item.title}
+              </li>
+            </Link>
           );
         })}
       </ul>
