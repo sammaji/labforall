@@ -14,6 +14,7 @@ import SignUp from "./pages/SignUp";
 
 import "./assets/css/Animation.css";
 import "./assets/css/App.css";
+import Simulation from "./pages/Simulation";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
@@ -29,6 +30,7 @@ const router = createBrowserRouter([
       { path: "/dashboard/:classId/:subject/:exp", element: <Content /> },
       { path: "/discussion", element: <Discussion/> },
       { path: "/discussion/:room", element: <DiscussionRoom/> },
+      { path: "/simulation/", element: <Simulation /> },
     ],
   },
   // { path: "/dashboard/:classId", element: <Dashboard /> },
