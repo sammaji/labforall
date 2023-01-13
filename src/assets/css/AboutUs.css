@@ -14,13 +14,22 @@
   left: 10px;
   transform: translateX(15vw);
 }
+
 .about-us h2 {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -100%);
   font-size: 3rem;
 }
+
 .about-us-main h3 span {
   font-size: 1.5rem;
   color: var(--col-pri);
+}
+
+@media only screen and (max-width: 768px) {
+  .about-us-main {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: none;
+  }
 }

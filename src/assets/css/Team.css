@@ -49,6 +49,7 @@
 .team-card {
   background-color: transparent;
   display: grid;
+  margin: auto;
   gap: 2rem;
   grid-column: span 2;
   grid-template-columns: 1fr 1fr;
@@ -65,7 +66,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   width: 24vw;
-  min-width: 120px;
+  min-width: 360px;
   max-width: 380px;
   padding: 4rem 1rem 2.5rem 1rem;
   text-align: center;

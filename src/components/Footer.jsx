@@ -1,5 +1,6 @@
 import React from "react";
 import footer_json from "../data/footer.json";
+
 import "../assets/css/Footer.css";
 
 const Footer = () => {

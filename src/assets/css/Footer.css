@@ -3,7 +3,6 @@ footer {
   height: fit-content;
   background-color: #2869fe;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   padding: 2rem;
@@ -21,4 +20,12 @@ footer ul {
 
 footer ul > li:first-child {
   font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
 }

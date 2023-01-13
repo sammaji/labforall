@@ -1,0 +1,97 @@
+.discussion {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  height: 100vh;
+  padding: 32px;
+  width: 100%;
+}
+
+.room-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.room-list li {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 360px;
+  max-width: 380px;
+  min-width: 120px;
+  padding: 4rem 1rem;
+  text-align: center;
+  width: 24vw;
+}
+
+.room-list li span {
+  color: rgba(75, 75, 75, 0.5);
+  text-decoration: none;
+}
+
+.discussion-input-container {
+  display: flex;
+  gap: 4px;
+  width: 100%;
+}
+
+.discussion-input {
+  border: none;
+  border-bottom: 1px solid #000;
+  flex: 1;
+  padding: 12px 8px;
+}
+
+.discussion-send-message {
+  background: rgba(0, 11, 135, 0.5);
+  border-radius: 0.2rem;
+  color: white;
+  cursor: pointer;
+  padding: 12px 14px;
+}
+
+.discussion-list-container {
+  border-radius: 12px;
+  flex: 1;
+  margin-bottom: 16px;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.discussion-list-container::-webkit-scrollbar {
+  width: 0.2px;
+}
+
+.discussion-list {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.discussion-message {
+  background-color: antiquewhite;
+  border-radius: 0.8rem;
+  list-style-type: none;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+  text-align: left;
+}
+
+.discussion-own-message {
+  align-self: flex-end;
+  background: lightblue;
+  list-style-type: none;
+  text-align: right;
+}
+
+.discussion-sender {
+  margin-bottom: 8px;
+}

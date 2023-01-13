@@ -1,5 +1,5 @@
 import React from "react";
-import { redirect } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import signUp from "../utils/auth/signUp.util";
 
@@ -7,6 +7,8 @@ import "../assets/css/Login.css";
 import { useAnalytics } from "use-analytics";
 
 const SignUp = () => {
+  const navigate = useNavigate();
+
   const { track, page, identify } = useAnalytics();
 
   const emailRef = React.useRef(null);
@@ -30,10 +32,11 @@ const SignUp = () => {
         phone: phoneRef.current.value,
       })
         .then((credentials) => {
+          console.log("Successful");
+          return navigate("/");
           try {
             identify("user", { email: credentials.email });
           } catch (e) {}
-          return redirect("/");
         })
         .catch((err) => {
           setError(err.message || "An unknown error occured");
