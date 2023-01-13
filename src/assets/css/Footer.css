@@ -18,6 +18,16 @@ footer ul {
   list-style-type: none;
 }
 
+footer ul li,
+footer a,
+footer a:visited,
+footer a:not(:visited) {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+}
+
 footer ul > li:first-child {
   font-weight: bold;
 }

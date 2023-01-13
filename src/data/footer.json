@@ -9,7 +9,7 @@
                 },
                 {
                     "title": "Linkedin",
-                    "url": "https://linkedin.com/in/"
+                    "url": "https://linkedin.com/"
                 },
                 {
                     "title": "Github",
@@ -18,14 +18,6 @@
                 {
                     "title": "Instagram",
                     "url": "https://instagram.com/"
-                },
-                {
-                    "title": "Dribbble",
-                    "url": "https://github.com/"
-                },
-                {
-                    "title": "Behance",
-                    "url": "https://github.com/"
                 }
             ]
         },
@@ -34,15 +26,15 @@
             "list": [
                 {
                     "title": "Experiment Guide",
-                    "url": "..."
+                    "url": "/dashboard"
                 },
                 {
                     "title": "Interactive Examples",
-                    "url": "..."
+                    "url": "/?run_sim=true"
                 },
                 {
-                    "title": "support",
-                    "url": "..."
+                    "title": "Discussion",
+                    "url": "/discussion"
                 }
             ]
         },
@@ -51,19 +43,19 @@
             "list": [
                 {
                     "title": "Usage",
-                    "url": "https://<base-url>.dom/docs/how-to-use"
+                    "url": "/docs/usage"
                 },
                 {
                     "title": "Community Guidelines",
-                    "url": "https://<base-url>.dom/docs/community-guidelines"
+                    "url": "/docs/community-guidelines"
                 },
                 {
                     "title": "Terms and Condition",
-                    "url": "https://<base-url>.dom/docs/terms-and-condition"
+                    "url": "/docs/terms-and-condition"
                 },
                 {
                     "title": "Privacy Policy",
-                    "url": "https://<base-url>.dom/docs/privacy-policy"
+                    "url": "/docs/privacy-policy"
                 }
             ]
         }
