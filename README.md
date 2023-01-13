@@ -40,6 +40,11 @@
 - FireBase
 
 
+## What is the future of LabForAll
+- We will be adding more and more experiments and simulations to the existing lot in the coming time.
+- We look forward to host this site and open it for the students, if we win this hackathon or something.
+
+
 ## Installation
 
 First clone this repository. You can also fork this repository and then clone the forked one.
