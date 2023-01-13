@@ -213,26 +213,26 @@ class World {
       this.kuiperBelt = new KuiperBelt();
       this.environment = new Environment();
 
-      this.setListeners();
+      // this.setListeners();
     });
   }
 
-  setListeners() {
-    document.querySelector("#orbitsToggle").addEventListener("click", (e) => {
-      this.planets.forEach((planet) => {
-        if (this.orbitsVisible) {
-          planet.ellipse.visible = false;
-        } else {
-          planet.ellipse.visible = true;
-        }
-      });
-      if (this.orbitsVisible) {
-        this.orbitsVisible = false;
-      } else {
-        this.orbitsVisible = true;
-      }
-    });
-  }
+  // setListeners() {
+  //   document.querySelector("#orbitsToggle").addEventListener("click", (e) => {
+  //     this.planets.forEach((planet) => {
+  //       if (this.orbitsVisible) {
+  //         planet.ellipse.visible = false;
+  //       } else {
+  //         planet.ellipse.visible = true;
+  //       }
+  //     });
+  //     if (this.orbitsVisible) {
+  //       this.orbitsVisible = false;
+  //     } else {
+  //       this.orbitsVisible = true;
+  //     }
+  //   });
+  // }
 
   update() {
     if (this.mercury) {

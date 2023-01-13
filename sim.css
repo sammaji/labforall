@@ -89,6 +89,7 @@ body {
   padding: 5px;
   transition: all 0.4s;
 }
+
 .divider {
   height: 1px;
   width: 100%;
@@ -128,7 +129,7 @@ body {
 .cta:before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 0;
   display: block;
   border-radius: 50px;
@@ -140,7 +141,7 @@ body {
 
 .cta span {
   position: relative;
-  font-size: 0.1rem;
+  font-size: 0.8rem;
   /* font-weight: 700; */
   color: #fff;
   padding-left: 8px;
