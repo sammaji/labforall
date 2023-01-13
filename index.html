@@ -3,11 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Experiments</title>
+    <script src="sim.js" defer></script>
   </head>
   <body>
+    <div id="con-sim">
+      <div class="loading"></div>
+      <div class="loading__bar"></div>
+      <div id="sidepanel">
+        <div class="sidepanel-item" id="sun">
+          <p>Sun</p>
+          <button class="cta" id="sunLocate">
+            <span>Find Sun</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+        </div>
+        <div class="divider"></div>
+        <div class="sidepanel-item" id="mercury">
+          <p>Mercury</p>
+          <button class="cta" id="mercuryLocate">
+            <span>Find Mercury</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+        </div>
+        <div class="divider"></div>
+        <div class="sidepanel-item" id="venus">
+          <p>Venus</p>
+          <button class="cta" id="venusLocate">
+            <span>Find Venus</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+        </div>
+        <div class="divider"></div>
+        <div class="sidepanel-item" id="earth">
+          <p>Earth</p>
+          <button class="cta" id="earthLocate">
+            <span>Find Earth</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+        </div>
+        <div class="divider"></div>
+        <div class="sidepanel-item" id="mars">
+          <p>Mars</p>
+          <button class="cta" id="marsLocate">
+            <span>Find Mars</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+        </div>
+        <div class="divider"></div>
+        <div class="sidepanel-item" id="jupiter">
+          <p>Jupiter</p>
+          <button class="cta" id="jupiterLocate">
+            <span>Find Jupiter</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+        </div>
+        <div class="divider"></div>
+        <div class="sidepanel-item" id="saturn">
+          <p>Saturn</p>
+          <button class="cta" id="saturnLocate">
+            <span>Find Saturn</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+        </div>
+        <div class="divider"></div>
+        <div class="sidepanel-item" id="uranus">
+          <p>Uranus</p>
+          <button class="cta" id="uranusLocate">
+            <span>Find Uranus</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+        </div>
+        <div class="divider"></div>
+        <div class="sidepanel-item" id="neptune">
+          <p>Neptune</p>
+          <button class="cta" id="neptuneLocate">
+            <span>Find Neptune</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="info">
+        <h3>Name</h3>
+        <p id="name"></p>
+        <h3>Mass</h3>
+        <p id="mass"></p>
+        <h3>Diameter</h3>
+        <p id="diameter"></p>
+        <h3>Gravity</h3>
+        <p id="gravity"></p>
+        <h3>Length of Year</h3>
+        <p id="lengthOfYear"></p>
+        <h3>Length of day</h3>
+        <p id="lengthOfDay"></p>
+        <h3>Description</h3>
+        <p id="desc"></p>
+      </div>
+      <canvas class="webgl"></canvas>
+      <script type="module" src="./simulations/index.js"></script>
+    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
