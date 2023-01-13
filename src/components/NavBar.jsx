@@ -4,6 +4,7 @@ import { IoIosHelpCircleOutline } from "react-icons/io";
 import MENU_DATA from "../data/menu.data";
 
 import "../assets/css/NavBar.css";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   // function toggle_menu() {
@@ -20,7 +21,7 @@ const NavBar = () => {
           return (
             <li key={index}>
               <IoIosHelpCircleOutline />
-              <a href="#">{item.title}</a>
+              <Link to={item.to}>{item.title}</Link>
             </li>
           );
         })}
