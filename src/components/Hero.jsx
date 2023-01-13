@@ -27,15 +27,15 @@ const Hero = () => {
     <div className="hero">
       <nav className="hero-desktop">
         <ul>
-          {/* {HOME_MENU.map((item, index) => {
-            return <li key={index}>{item}</li>;
-          })} */}
           <li onClick={navigateToHome}>Home</li>
           <li onClick={navigateToAbout}>About Us</li>
           <li>
             <Link to={"/dashboard"}>Dashboard</Link>
           </li>
           <li onClick={navigateToContact}>Contacts</li>
+          <li>
+            <Link to={"/login"}>Join Us</Link>
+          </li>
         </ul>
       </nav>
 

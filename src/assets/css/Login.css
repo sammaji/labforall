@@ -45,6 +45,8 @@
 }
 
 .login-content {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   background-color: white;
   width: 40vw;
   height: 80vh;
@@ -96,8 +98,12 @@
 }
 
 .login-error {
-  font-size: 0.3rem;
+  /* font-size: 0.3rem; */
   color: red;
+}
+
+.login a {
+  text-decoration: none;
 }
 
 .login-social img {

@@ -1,19 +1,21 @@
 .analytics {
   align-items: center;
   display: flex;
-  grid-column: span 2;
+  flex-wrap: wrap;
   height: 100vh;
   justify-content: center;
   width: 100%;
 }
 
 .analytics-content {
-  display: grid;
+  /* display: grid;
   padding: 4rem;
   width: 100%;
   height: 100%;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr); */
+  width: 70%;
+  height: auto;
 }
 
 .analytics-performance {
@@ -31,7 +33,8 @@
 
 .analytics-comments textarea {
   resize: none;
-  padding: 1rem 0.4rem;
+  padding: 2rem 1rem;
   width: 100%;
-  height: 100%;
+  height: 24vh;
+  scrollbar-width: 0px;
 }
