@@ -111,3 +111,9 @@
   -webkit-animation: jello-horizontal 0.9s both;
   animation: jello-horizontal 0.9s both;
 }
+
+@media screen and (max-width: 800px) {
+  .login-img-container {
+    display: none;
+  }
+}

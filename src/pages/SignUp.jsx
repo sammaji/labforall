@@ -1,8 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import pic_login from "../assets/img/pic-login.jpg";
 import signUp from "../utils/auth/signUp.util";
-
 import "../assets/css/Login.css";
 import { useAnalytics } from "use-analytics";
 
@@ -46,53 +45,63 @@ const SignUp = () => {
 
   return (
     <div className="login">
-      <div className="login-content">
-        {error && <p className="login-error error">{error}</p>}
-        <div className="login-title">SignUp</div>
-        <input
-          type="email"
-          label="Email"
-          id="email"
-          ref={emailRef}
-          className="login-name"
-          placeholder="Email"
-        />
-        <input
-          type="text"
-          label="Usernam"
-          id="username"
-          ref={nameRef}
-          className="login-name"
-          placeholder="Username"
-        />
-        <input
-          type="number"
-          label="Phone number"
-          id="phone"
-          ref={phoneRef}
-          className="login-name"
-          placeholder="Phone number (optional)"
-        />
-        <input
-          type="number"
-          label="Age"
-          id="age"
-          ref={ageRef}
-          className="login-name"
-          placeholder="Age"
-        />
-        <input
-          type="password"
-          label="password"
-          id="password"
-          ref={pwdRef}
-          className="login-password"
-          placeholder="enter password"
-        />
-        <button className="login-button" onClick={handleSubmit}>
-          SignUp{" "}
-        </button>
-        <div className="login-social"></div>
+      <div className="login-container">
+        <div className="login-img-container">
+          <img src={pic_login}></img>
+        </div>
+        <div className="login-content">
+          <div className="login-title">
+            <h2>
+              SignUp
+              <span />.
+            </h2>
+          </div>
+          <input
+            type="email"
+            label="Email"
+            id="email"
+            ref={emailRef}
+            className="login-name"
+            placeholder="Email"
+          />
+          <input
+            type="text"
+            label="Usernam"
+            id="username"
+            ref={nameRef}
+            className="login-name"
+            placeholder="Username"
+          />
+          <input
+            type="number"
+            label="Phone number"
+            id="phone"
+            ref={phoneRef}
+            className="login-name"
+            placeholder="Phone number (optional)"
+          />
+          <input
+            type="number"
+            label="Age"
+            id="age"
+            ref={ageRef}
+            className="login-name"
+            placeholder="Age"
+          />
+          <input
+            type="password"
+            label="password"
+            id="password"
+            ref={pwdRef}
+            className="login-password"
+            placeholder="enter password"
+          />
+          {error && <p className="login-error error">{error}</p>}
+          <button className="login-button" onClick={handleSubmit}>
+            SignUp{" "}
+          </button>
+          <div className="login-social"></div>
+        </div>
       </div>
     </div>
   );
