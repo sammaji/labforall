@@ -21,6 +21,9 @@ export default async (email, password, data) => {
   return createUserWithEmailAndPassword(auth, email, password)
     .then(async (userCredential) => {
       const user = userCredential.user;
+
+      window.localStorage.setItem("uid", user.uid);
+
       try {
         const writeData = await writeUserData(user.uid, {
           email: user.email,
