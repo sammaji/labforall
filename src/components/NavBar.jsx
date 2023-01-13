@@ -3,7 +3,7 @@ import { IoIosHelpCircleOutline } from "react-icons/io";
 
 import MENU_DATA from "../data/menu.data";
 
-import "../assets/css/NavBar.css";
+import "../assets/css/nav_bar_style.css";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
