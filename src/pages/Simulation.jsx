@@ -1,22 +1,28 @@
 import React from "react";
-import "../assets/css/Simulation.css"
-import img_solar_sys from "../assets/img/pic-sim-solar.png"
+import "../assets/css/Simulation.css";
+import img_solar_sys from "../assets/img/pic-sim-solar.png";
 
 const Card = () => {
   return (
     <>
-      <div class="card">
-        <div class="card-image">
-            <img src={img_solar_sys}/>
+      <div
+        className="card"
+        onClick={() => {
+          console.log();
+          window.open(
+            `${window.location
+              .toString()
+              .replace(/\/simulation/g, "")}?run_sim=true`
+          );
+        }}
+      >
+        <div className="card-image">
+          <img src={img_solar_sys} />
         </div>
-        <div class="category"> SOLAR SYSTEM </div>
-        <div class="heading">
-          {" "}
-          A fully interactive realtime simulation of the solar system containing all planets in their orbit.
-          <div class="author">
-            {" "}
-            By <span class="name">Karthik</span>
-          </div>
+        <div className="category"> SOLAR SYSTEM </div>
+        <div className="heading">
+          A fully interactive realtime simulation of the solar system containing
+          all planets in their orbit.
         </div>
       </div>
     </>
@@ -26,8 +32,8 @@ const Card = () => {
 const Simulation = () => {
   return (
     <div className="simulation">
-        
-        <Card/>
+      <h2>Interactive Simulations</h2>
+      <Card />
     </div>
   );
 };

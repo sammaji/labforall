@@ -3,27 +3,22 @@ import { FaBeer } from "react-icons/fa";
 const MENU_DATA = [
   {
     title: "Performance",
-    to: "profile",
+    to: "/analytics",
     icon: FaBeer,
   },
   {
     title: "Dashboard",
-    to: "dashboard",
+    to: "/dashboard",
     icon: FaBeer,
   },
   {
-    title: "Notes",
-    to: "notes",
+    title: "Simulation",
+    to: "/simulation",
     icon: FaBeer,
   },
   {
-    title: "Settings",
-    to: "settings",
-    icon: FaBeer,
-  },
-  {
-    title: "About Us",
-    to: "about_us",
+    title: "Discussion",
+    to: "/discussion",
     icon: FaBeer,
   },
 ];

@@ -1,4 +1,5 @@
 .navbar {
+  padding-top: 4rem;
   background-color: var(--col-pri);
 }
 
@@ -18,6 +19,11 @@
 }
 
 .navbar ul li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   text-decoration: none;
   color: white;
 }

@@ -10,6 +10,7 @@ import socialSignUp from "../utils/auth/socialLogin.util";
 import signIn from "../utils/auth/signIn.util";
 
 import "../assets/css/Login.css";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const { track, page, identify } = useAnalytics();
@@ -44,7 +45,11 @@ const Login = () => {
           <img src={pic_login}></img>
         </div>
         <div className="login-content">
-          <div className="login-title"><h2>Login<span>.</span></h2></div>
+          <div className="login-title">
+            <h2>
+              Login<span>.</span>
+            </h2>
+          </div>
           <input
             type="text"
             label="Email"
@@ -61,6 +66,7 @@ const Login = () => {
             className="login-password"
             placeholder="Password"
           />
+          <p>Already a member? <Link to={'/signup'}>Sign Up</Link></p>
           {error && <p className="login-error error">{error}</p>}
           <button className="login-button" onClick={handleSubmit}>
             Login{" "}

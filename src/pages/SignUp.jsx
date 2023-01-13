@@ -52,8 +52,7 @@ const SignUp = () => {
         <div className="login-content">
           <div className="login-title">
             <h2>
-              SignUp
-              <span />.
+              SignUp<span>.</span>
             </h2>
           </div>
           <input
@@ -90,11 +89,11 @@ const SignUp = () => {
           />
           <input
             type="password"
-            label="password"
+            label="assword"
             id="password"
             ref={pwdRef}
             className="login-password"
-            placeholder="enter password"
+            placeholder="Password"
           />
           {error && <p className="login-error error">{error}</p>}
           <button className="login-button" onClick={handleSubmit}>

@@ -25,19 +25,14 @@ const router = createBrowserRouter([
     element: <Dashboard />,
     children: [
       { path: "/analytics/", element: <Analytics /> },
+      { path: "/simulation/", element: <Simulation /> },
       { path: "/dashboard/", element: <DashContent /> },
       { path: "/dashboard/:classId/:subject", element: <ExperimentList /> },
       { path: "/dashboard/:classId/:subject/:exp", element: <Content /> },
-      { path: "/discussion", element: <Discussion/> },
-      { path: "/discussion/:room", element: <DiscussionRoom/> },
-      { path: "/simulation/", element: <Simulation /> },
+      { path: "/discussion", element: <Discussion /> },
+      { path: "/discussion/:room", element: <DiscussionRoom /> },
     ],
   },
-  // { path: "/dashboard/:classId", element: <Dashboard /> },
-
-  // { path: "/data/:classId", element: <Data /> },
-  // { path: "/data/:classId/:subject", element: <Data /> },
-  // { path: "/data/:classId/:subject/:exp", element: <Data /> },
 ]);
 
 const App = () => {
