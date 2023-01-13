@@ -1,17 +1,35 @@
 import React from "react";
-import dasboard_preview from "../assets/img/dashboard.png"
+import dasboard_preview from "../assets/img/dashboard.png";
 import "../assets/css/Hero.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
-  const HOME_MENU = ["Home", "About Us", "Community", "Contacts"];
+  function navigateToHome() {
+    window.scrollTo(0, 0);
+  }
+
+  function navigateToAbout() {
+    let rect = document.getElementById("about-us-wave").getBoundingClientRect();
+    window.scrollTo(0, rect.top);
+  }
+
+  
+  function navigateToContact() {
+    let rect = document.getElementById("footer").getBoundingClientRect();
+    window.scrollTo(0, rect.top);
+  }
 
   return (
     <div className="hero">
       <nav>
         <ul>
-          {HOME_MENU.map((item, index) => {
+          {/* {HOME_MENU.map((item, index) => {
             return <li key={index}>{item}</li>;
-          })}
+          })} */}
+          <li onClick={navigateToHome}>Home</li>
+          <li onClick={navigateToAbout}>About Us</li>
+          <li><Link to={'/dashboard'}>Dashboard</Link></li>
+          <li onClick={navigateToContact}>Contacts</li>
         </ul>
       </nav>
 

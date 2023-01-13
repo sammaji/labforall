@@ -5,7 +5,7 @@ import "../assets/css/Footer.css";
 const Footer = () => {
   return (
     <>
-      <footer>
+      <footer id="footer">
         <ul>
           <li>{footer_json.data[0].heading}</li>
           {footer_json.data[0].list.map((item, index) => {

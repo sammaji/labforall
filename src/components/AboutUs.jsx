@@ -7,7 +7,7 @@ const AboutUs = () => {
   return (
     <>
       <div className="about-us">
-        <img src={deco_wave}></img>
+        <img id={"about-us-wave"} src={deco_wave}></img>
         <h2>About Us</h2>
 
         <div className="about-us-main">
