@@ -15,6 +15,7 @@ import SignUp from "./pages/SignUp";
 import "./assets/css/Animation.css";
 import "./assets/css/App.css";
 import Simulation from "./pages/Simulation";
+import { useEffect } from "react";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
@@ -36,6 +37,11 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
+
+  useEffect(() => {
+    document.title = "Lab 4 All"
+  }, [])
+
   return (
     <div className="app">
       <RouterProvider router={router} />
