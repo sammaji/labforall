@@ -52,6 +52,9 @@ const Hero = () => {
             <AiOutlineClose
               color="white"
               className={"z-infinite" + (!navbarState ? " display-none" : "")}
+              style={{
+                position: navbarState ? "fixed" : "relative",
+              }}
             />
           </span>
         </span>

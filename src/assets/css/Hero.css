@@ -139,9 +139,6 @@
     width: 100%;
   }
 
-  .hero-mobile-list.active {
-  }
-
   .hero nav ul li,
   .hero nav ul li a {
     font-size: 0.8rem;
@@ -162,8 +159,8 @@
 
   .hero-mobile ul.hero-mobile-list-ul {
     z-index: 100001;
-    position: absolute;
-    left: -20%;
+    position: fixed;
+    left: 5%;
     margin: auto;
     padding-top: 20vh;
     display: flex;
