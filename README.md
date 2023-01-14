@@ -4,7 +4,7 @@
 
 ## What it does
 
-- In LabForALL, you get the opportunity to access every details about your lab experiments ranging from procedures to observation tables, apparatus setup to complete guide video on how to perform the experiments.
+- In LabForALL, you get the opportunity to access every details about your lab experiments ranging from procedures to precautions, apparatus setup to complete guide video on how to perform the experiments.
 - There is a Query Submition section where you can post your doubts/issues and we will be answering to your question as soon as possible!!
 - We have provided a Simulation Section where the students can get interactive-access to their learning module.
 - The students can take digital notes while doing the experiments on a side-bar dedicated for that purpose.
