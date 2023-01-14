@@ -25,11 +25,12 @@
   color: white;
 }
 
-.navbar ul svg {
-  height: 40px;
-  width: 40px;
-  padding: 0.5rem;
-  color: white;
+.navbar img {
+  height: auto;
+  width: 160px; /** should be 168 but that looks off idk why **/
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
 }
 
 .navbar ul li:hover {

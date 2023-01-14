@@ -15,7 +15,7 @@ export const fetchClasswiseExperiments = async (id, subject) => {
     data.forEach(async (d) => {
       if (d.exists()) {
         const experiment = d.data();
-        snapshot.push({ id: d.id, name: experiment.aim });
+        snapshot.push({ id: d.id, aim: experiment.Aim, theory: experiment.Theory });
       }
     });
 

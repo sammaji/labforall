@@ -4,22 +4,22 @@ const MENU_DATA = [
   {
     title: "Performance",
     to: "/analytics",
-    icon: FaBeer,
+    icon: "graph",
   },
   {
     title: "Dashboard",
     to: "/dashboard",
-    icon: FaBeer,
+    icon: "book",
   },
   {
     title: "Simulation",
     to: "/simulation",
-    icon: FaBeer,
+    icon: "earth",
   },
   {
     title: "Discussion",
     to: "/discussion",
-    icon: FaBeer,
+    icon: "chat",
   },
 ];
 
