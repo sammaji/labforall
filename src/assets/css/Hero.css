@@ -79,7 +79,9 @@
 }
 
 .hero-img img {
-  height: 50vh;
+  outline: rgb(256, 256, 256) ;
+  transform: translateY(-36px);
+  height: 60vh;
   width: auto;
 }
 

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { fetchClasswiseExperiments } from "../utils/data/fetchExperiment.data";
 import "../assets/css/DashContent.css";
+import getModifedClassName from "./getSubject.filter";
 
 const ExperimentList = () => {
   const { classId, subject } = useParams();
@@ -11,7 +12,8 @@ const ExperimentList = () => {
 
   useEffect(() => {
     if (classId && subject) {
-      fetchClasswiseExperiments(classId.toLowerCase(), subject.toLowerCase())
+      console.log(getModifedClassName(classId, subject))
+      fetchClasswiseExperiments(classId, getModifedClassName(classId, subject))
         .then((data) => {
           setList(data);
         })
