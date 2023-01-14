@@ -15,10 +15,6 @@ const Content = () => {
     });
   }, []);
 
-  const calculateDimensions = () => {
-    return [(9 * 600) / 16, 600];
-  };
-
   const [height, width] = calculateDimensions();
 
   return (
@@ -29,18 +25,11 @@ const Content = () => {
       </div>
 
       <div>
-        <iframe
-          width={width}
-          height={height}
-          src="https://www.youtube.com/embed/tgbNymZ7vqY"
-        ></iframe>
-      </div>
-
-      <div>
-        <h3>Title of Experiment</h3>
-        <p>
-          {content && content.aim}
-        </p>
+        <h3>{content && content.aim}</h3>
+        <p>{content && content.aim}</p>
+        <p>{content && content.materials}</p>
+        <p>{content && content.observations[0].content}</p>
+        <p>{content && content.theory[0].content[0]}</p>
       </div>
     </article>
   );
