@@ -9,8 +9,10 @@ import "../assets/css/Hero.css";
 const Hero = () => {
   const [navbarState, setNavbarState] = useState(false);
 
-  function navigateToHome() {
-    window.scrollTo(0, 0);
+  function navigateToSim() {
+    window.open(
+      `${window.location.toString()}?run_sim=true`
+    )
   }
 
   function navigateToAbout() {
@@ -30,11 +32,11 @@ const Hero = () => {
           <img className="hero-logo" src={logo_with_text} />
         </div>
         <ul>
-          <li onClick={navigateToHome}>Home</li>
-          <li onClick={navigateToAbout}>About Us</li>
+          <li onClick={navigateToSim}>Interactive Example</li>
           <li>
             <Link to={"/dashboard"}>Dashboard</Link>
           </li>
+          <li onClick={navigateToAbout}>About Us</li>
           <li onClick={navigateToContact}>Contacts</li>
           <li>
             <Link to={"/login"}>Join Us</Link>
@@ -65,14 +67,14 @@ const Hero = () => {
         <div className={"hero-mobile-list" + (navbarState ? " active" : "")}>
           <div className="hero-mobile-backdrop" />
           <ul className="hero-mobile-list-ul">
-            <li className="hero-mobile-links" onClick={navigateToHome}>
-              Home
-            </li>
-            <li className="hero-mobile-links" onClick={navigateToAbout}>
-              About Us
+            <li className="hero-mobile-links" onClick={navigateToSim}>
+              Interactive Example
             </li>
             <li className="hero-mobile-links">
               <Link to={"/dashboard"}>Dashboard</Link>
+            </li>
+            <li className="hero-mobile-links" onClick={navigateToAbout}>
+              About Us
             </li>
             <li className="hero-mobile-links" onClick={navigateToContact}>
               Contacts
