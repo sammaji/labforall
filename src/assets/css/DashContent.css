@@ -1,6 +1,5 @@
 :root {
-  --dark-theme-cols: #9701f0;
-  --dark-theme-bg: #3f2e49;
+  --cardBorder: 1rem;
 }
 
 .dashc {
@@ -12,21 +11,26 @@
 }
 
 .dashc-content {
-    display: grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  border-radius: 10px;
   margin: 0;
-  padding: 0;
-  width: 30vw;
+  padding: 1rem;
+  width: 70vw;
+  gap: 2rem;
   min-width: 300px;
   overflow: hidden;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .dashc-card {
-  background-color: var(--col-pri);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: var(--cardBorder);
   font-size: 20px;
+}
+
+.dashc-card:hover {
+  transition: all 0.2s ease-in;
+  box-shadow: rgba(40, 105, 254, 0.35) 0px 5px 15px;
 }
 
 .dashc-card:last-child {
@@ -41,7 +45,13 @@
   color: #000;
 }
 
+.dashc-sublink:hover {
+  background-color: rgba(40, 105, 254, 0.35);
+}
+
 .dashc-link {
+  border-radius: var(--cardBorder) var(--cardBorder) 0 0;
+  background-color: var(--col-pri);
   color: #fff;
 }
 
@@ -51,6 +61,7 @@
   transition: max-height 0.5s;
   color: #000;
   background: #fff;
+  border-radius: 0 0 var(--cardBorder) var(--cardBorder);
 }
 
 /* .dashc-submenu:target { */
@@ -68,12 +79,63 @@
   background: #36253f;
 }
 
+/** exp list **/
+.exp-list {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-@media screen and (max-width: 530px) {
+.exp-list h2 {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.exp-list h3 {
+  font-size: 1.4rem;
+  color: var(--col-pri);
+  margin-bottom: 0.5rem;
+}
+
+.exp-list p {
+  font: 1.2rem;
+}
+
+.exp-list-wrapper {
+  display: flex;
+  width: 70vw;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
+}
+
+.exp-con {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  min-height: 100px;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 1rem;
+}
+
+.exp-con:hover {
+  transition: all 0.2s ease-in;
+  box-shadow: rgba(40, 105, 254, 0.35) 0px 5px 15px;
+}
+
+.exp-con a, .exp-con a:visited, .exp-con a:not(:visited) {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 620px) {
   .dashc-content {
     grid-template-columns: 1fr;
     grid-row: 1fr 1fr 1fr 1fr;
     min-width: 240px;
   }
-  
 }
