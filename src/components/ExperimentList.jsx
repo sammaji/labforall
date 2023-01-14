@@ -13,7 +13,6 @@ const ExperimentList = () => {
     if (classId && subject) {
       fetchClasswiseExperiments(classId.toLowerCase(), subject.toLowerCase())
         .then((data) => {
-          console.log(data);
           setList(data);
         })
         .catch((err) => setError(err.message));

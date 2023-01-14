@@ -11,7 +11,6 @@ const Content = () => {
   useEffect(() => {
     fetchExperiment(classId, subject, exp).then((data) => {
       setContent(data);
-      console.log(data);
     });
   }, []);
 
