@@ -10,7 +10,7 @@ const AboutUs = () => {
     <>
       <div className="about-us">
         <img id={"about-us-wave"} src={deco_wave}></img>
-        <h2>About Us</h2>
+        <div className="about-us-heading-con"><h2>About Us</h2></div>
 
         <div className="about-us-main">
           {

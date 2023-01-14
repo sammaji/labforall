@@ -15,10 +15,14 @@
   transform: translateX(15vw);
 }
 
+.about-us-heading-con {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .about-us h2 {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -100%);
   font-size: 3rem;
 }
 
