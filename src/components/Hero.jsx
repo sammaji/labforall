@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
-
+import logo_with_text from "../assets/svg/logo-and-text.svg";
 import dasboard_preview from "../assets/img/dashboard.png";
 import "../assets/css/Hero.css";
 
@@ -26,6 +26,9 @@ const Hero = () => {
   return (
     <div className="hero">
       <nav className="hero-desktop">
+        <div>
+          <img className="hero-logo" src={logo_with_text} />
+        </div>
         <ul>
           <li onClick={navigateToHome}>Home</li>
           <li onClick={navigateToAbout}>About Us</li>

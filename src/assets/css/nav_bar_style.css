@@ -18,12 +18,9 @@
   gap: 1rem;
 }
 
-.navbar ul li a {
+.navbar ul a {
   height: 100%;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   text-decoration: none;
   color: white;
 }
