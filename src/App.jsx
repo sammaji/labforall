@@ -39,7 +39,7 @@ const router = createBrowserRouter([
 const App = () => {
 
   useEffect(() => {
-    document.title = "Lab 4 All"
+    document.title = "Lab For All"
   }, [])
 
   return (
