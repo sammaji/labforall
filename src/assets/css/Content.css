@@ -22,3 +22,7 @@ article img {
 article iframe {
   border: none;
 }
+
+.new-line {
+  white-space: pre-wrap;
+}

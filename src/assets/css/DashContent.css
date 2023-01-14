@@ -100,6 +100,12 @@
 }
 
 .exp-list p {
+  display: -webkit-box;
+  visibility: visible;
+  text-overflow: ellipsis;
+  line-clamp: 8;
+  -webkit-line-clamp: 8;
+  overflow: hidden;
   font: 1.2rem;
 }
 
