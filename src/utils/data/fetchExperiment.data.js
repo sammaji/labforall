@@ -21,7 +21,7 @@ export const fetchClasswiseExperiments = async (id, subject) => {
 
     return snapshot;
   } catch (e) {
-    console.warn(e.message);
+    console.warn("e.message1");
   }
 };
 
@@ -35,6 +35,6 @@ export const fetchExperiment = async (id, subject, exp) => {
       return snapshot;
     }
   } catch (e) {
-    console.warn(e.message);
+    console.warn("e.message");
   }
 };

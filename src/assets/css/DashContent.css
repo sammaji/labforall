@@ -1,6 +1,4 @@
 :root {
-  --dark-theme-cols: #9701f0;
-  --dark-theme-bg: #3f2e49;
   --cardBorder: 1rem;
 }
 
@@ -79,6 +77,59 @@
 
 .dashc-submenu-link:hover {
   background: #36253f;
+}
+
+/** exp list **/
+.exp-list {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exp-list h2 {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.exp-list h3 {
+  font-size: 1.4rem;
+  color: var(--col-pri);
+  margin-bottom: 0.5rem;
+}
+
+.exp-list p {
+  font: 1.2rem;
+}
+
+.exp-list-wrapper {
+  display: flex;
+  width: 70vw;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
+}
+
+.exp-con {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  min-height: 100px;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 1rem;
+}
+
+.exp-con:hover {
+  transition: all 0.2s ease-in;
+  box-shadow: rgba(40, 105, 254, 0.35) 0px 5px 15px;
+}
+
+.exp-con a, .exp-con a:visited, .exp-con a:not(:visited) {
+  text-decoration: none;
+  color: black;
 }
 
 @media screen and (max-width: 620px) {
