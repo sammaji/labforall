@@ -1,17 +1,27 @@
+:root {
+  --chatSelf: #FCE38A;
+  --chatOther: #EAFFD0;
+}
+
 .discussion {
+  margin: auto;
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 32px;
   height: 100vh;
-  padding: 32px;
+  padding: 2rem;
   width: 100%;
+}
+
+.discussion h2 {
+  font-size: 2rem;
 }
 
 .room-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 1rem;
 }
 
 .room-list li {
@@ -31,30 +41,55 @@
   width: 24vw;
 }
 
+.room-list li:hover {
+  transition: all 0.5s ease-in;
+  box-shadow: rgba(40, 105, 254, 0.35) 0px 5px 15px;
+}
+
 .room-list li span {
-  color: rgba(75, 75, 75, 0.5);
+  font-size: 1.3rem;
   text-decoration: none;
+}
+
+.discussion-room {
+  margin: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  height: 100vh;
+  padding: 32px;
+  width: 50vw;
+  min-width: 300px;
 }
 
 .discussion-input-container {
   display: flex;
-  gap: 4px;
+  gap: 1rem;
   width: 100%;
 }
 
 .discussion-input {
   border: none;
-  border-bottom: 1px solid #000;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   flex: 1;
-  padding: 12px 8px;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.discussion-input:hover {
+  transition: all 0.2s ease-in;
+  box-shadow: rgba(40, 105, 254, 0.35) 0px 3px 8px;
 }
 
 .discussion-send-message {
-  background: rgba(0, 11, 135, 0.5);
-  border-radius: 0.2rem;
+  background-color: red;
+  border-radius: 0.5rem;
   color: white;
   cursor: pointer;
-  padding: 12px 14px;
+  width: fit-content;
+  padding: 1rem 3rem;
 }
 
 .discussion-list-container {
@@ -77,7 +112,7 @@
 }
 
 .discussion-message {
-  background-color: antiquewhite;
+  background-color: var(--chatOther);
   border-radius: 0.8rem;
   list-style-type: none;
   margin-bottom: 8px;
@@ -87,11 +122,69 @@
 
 .discussion-own-message {
   align-self: flex-end;
-  background: lightblue;
+  background-color: var(--chatSelf);
   list-style-type: none;
   text-align: right;
 }
 
 .discussion-sender {
   margin-bottom: 8px;
+}
+
+.send-button {
+  font-family: inherit;
+  font-size: 1rem;
+  background: var(--col-pri);
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.send-button:hover {
+  transition: all 0.2s ease-in;
+  box-shadow: rgba(40, 105, 254, 0.35) 0px 3px 8px;
+}
+
+.send-button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.send-button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.send-button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.send-button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.send-button:hover span {
+  transform: translateX(5em);
+}
+
+.send-button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
 }
