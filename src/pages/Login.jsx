@@ -10,9 +10,11 @@ import socialSignUp from "../utils/auth/socialLogin.util";
 import signIn from "../utils/auth/signIn.util";
 
 import "../assets/css/Login.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { Dashboard } from "@mui/icons-material";
 
 const Login = () => {
+  const navigate = useNavigate();
   const { track, page, identify } = useAnalytics();
 
   const emailRef = React.useRef(null);
@@ -30,6 +32,7 @@ const Login = () => {
         .then((credentials) => {
           try {
             identify("user", { email: credentials.email });
+            return navigate("/dashboard");
           } catch (e) {}
         })
         .catch((err) => {
@@ -66,7 +69,9 @@ const Login = () => {
             className="login-password"
             placeholder="Password"
           />
-          <p>Already a member? <Link to={'/signup'}>Sign Up</Link></p>
+          <p>
+            Already a member? <Link to={"/signup"}>Sign Up</Link>
+          </p>
           {error && <p className="login-error error">{error}</p>}
           <button className="login-button" onClick={handleSubmit}>
             Login{" "}

@@ -5,9 +5,6 @@ import "../assets/css/Content.css";
 import { fetchExperiment } from "../utils/data/fetchExperiment.data";
 import getModifedClassName from "./getSubject.filter";
 
-
-// const calcu
-
 const Content = () => {
   const { classId, subject, exp } = useParams();
   const [content, setContent] = useState(null);

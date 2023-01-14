@@ -32,7 +32,7 @@ const SignUp = () => {
       })
         .then((credentials) => {
           console.log("Successful");
-          return navigate("/");
+          return navigate("/dashboard");
           try {
             identify("user", { email: credentials.email });
           } catch (e) {}
