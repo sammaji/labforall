@@ -2,6 +2,8 @@
 - Our goal is to make the understanding of lab experiments simple and interactive for the students.
 
 
+![Preview](https://user-images.githubusercontent.com/116789799/215286790-697b0975-0740-487f-90d2-9d9666c6d162.png)
+
 ## What it does
 
 - In LabForALL, you get the opportunity to access every details about your lab experiments ranging from procedures to observation tables, apparatus setup to complete guide video on how to perform the experiments.
